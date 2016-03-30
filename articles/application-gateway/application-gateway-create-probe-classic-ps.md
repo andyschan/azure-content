@@ -110,6 +110,7 @@ Copy the following text to Notepad.
             <Timeout>15</Timeout>
             <UnhealthyThreshold>5</UnhealthyThreshold>
         </Probe>
+    </Probes>
     <BackendAddressPools>
         <BackendAddressPool>
             <Name>pool1</Name>
@@ -194,7 +195,7 @@ Open the XML file in a text editor. Add a `<probe>` section after `<frontendport
             <Timeout>15</Timeout>
             <UnhealthyThreshold>5</UnhealthyThreshold>
         </Probe>
-
+        </Probes>
 In the backendHttpSettings section of the XML, add the probe name as shown in the example below:
 
         <BackendHttpSettings>
